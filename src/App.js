@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { ScrollSync, ScrollSyncPane } from 'react-scroll-sync';
 
-import './App.css';
 import '98.css';
+import './App.css';
 
 var hljs = require('highlight.js')
 var newLine = require('markdown-it-preserve-newline');
@@ -93,7 +93,6 @@ render() {
   </div>`
 
   return (
-    <ScrollSync>
       <div className="App">
         <h3 id="welcome">Welcome to</h3>
         <h1 id="title">Markdown<span id="thin">98</span></h1>
@@ -101,6 +100,7 @@ render() {
           A quick and easy Markdown Editor. To clear the input box entirely, click the 'close' icon
           on the window bar.
         </p>
+        <ScrollSync>
         <container>
           <div className="input window" style={{display: this.state.min ? "none" : "block"}}>
             <div className="title-bar">
@@ -110,11 +110,11 @@ render() {
                 <button aria-label="Close" onClick={this.handleReset}></button>
               </div>
             </div>
-            <ScrollSyncPane>
               <div className="inputText">
-                <textarea name="input" id="editor" value={this.state.input} onChange={this.handleChange} autoFocus></textarea>
+                <ScrollSyncPane>
+                  <textarea name="input" id="editor" value={this.state.input} onChange={this.handleChange} autoFocus></textarea>
+                </ScrollSyncPane>
               </div>
-            </ScrollSyncPane>
           </div>
           <div className="output window" style={{margin: this.state.min ? "auto" : "auto"}}>
             <div className="title-bar">
@@ -125,6 +125,7 @@ render() {
             </ScrollSyncPane>
           </div>
         </container>
+      </ScrollSync>
         <footer>
           <button id="more" onClick={this.handleMenu}>More</button>
           {this.state.min ?
@@ -148,7 +149,6 @@ render() {
           </ul>
         </div>
       </div>
-    </ScrollSync>
   )};
 }
 
