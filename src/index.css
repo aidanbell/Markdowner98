@@ -109,7 +109,7 @@ footer {
 }
 
 .menu * {
-  font-size: 1.4em;
+  font-size: 1.3em;
 }
 
 #links {
@@ -132,4 +132,10 @@ footer {
 
 #more img {
   width: 10vmin;
+}
+
+#inputMin {
+  position: absolute;
+  bottom: 5px;
+  height: 3vmin;
 }

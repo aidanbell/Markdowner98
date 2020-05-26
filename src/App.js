@@ -133,6 +133,7 @@ render() {
             <a href="https://www.linkedin.com/in/aidanbell0/"><li>LinkedIn</li></a>
             <a href="https://aidanb.io/"><li>Personal Site</li></a>
           </ul>
+          <hr></hr>
           <h4>Coming Soon</h4>
           <hr></hr>
           <ul id="icebox">
@@ -141,6 +142,10 @@ render() {
             <li>Some more styling options</li>
             <li>A cheesey Windows 98-like logo</li>
           </ul>
+          <hr></hr>
+          <h4>Special Thanks</h4>
+          <a href="https://jdan.github.io/98.css/">98.css</a><br></br>
+          <a href="https://www.flaticon.com/authors/pixel-perfect" title="">Favicon by Pixel Perfect</a>
         </div>
       <div className="PDFModal window" style={{display: this.state.modal ? "none" : "block"}}>
 
