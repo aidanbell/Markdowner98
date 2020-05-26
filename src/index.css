@@ -78,12 +78,32 @@ footer {
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: red;
+  height: 4vmin;
+  background-color: #c3c3c3;
   color: white;
-  text-align: center;
+  text-align: left;
+  z-index: 0;
+}
+
+#more {
+  margin: 1vmin;
 }
 
 .inputText {
   height: 67.5vh;
   width: 100%;
+}
+
+.menu {
+  color: black;
+  position: fixed;
+  left: 0;
+  bottom: 4vmin;
+  z-index: 1;
+  height: 60vh;
+  width: 30vmin;
+}
+
+.menu * {
+  font-size: 1.5em;
 }
