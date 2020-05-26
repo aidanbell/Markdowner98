@@ -60,18 +60,27 @@ render() {
   return (
     <ScrollSync>
       <div className="App">
-        <h1>Welcome To Markdown98</h1>
+        <h3 id="welcome">Welcome to</h3>
+        <h1 id="title">Markdown<span id="thin">98</span></h1>
+        <p>
+          A quick and easy Markdown Editor. To clear the input box entirely, click the 'close' icon
+          on the window bar.
+        </p>
         <container>
-          <div className="input">
+          <div className="input window">
             <div className="title-bar">
               <p className="title-bar-text">Write your boring, plain-text here</p>
-              <button aria-label="Close" onClick={this.handleReset}></button>
+              <div className="title-bar-controls">
+                <button aria-label="Close" onClick={this.handleReset}></button>
+              </div>
             </div>
             <ScrollSyncPane>
-              <textarea name="input" id="editor" value={this.state.input} onChange={this.handleChange} autoFocus></textarea>
+              <div className="inputText">
+                <textarea name="input" id="editor" value={this.state.input} onChange={this.handleChange} autoFocus></textarea>
+              </div>
             </ScrollSyncPane>
           </div>
-          <div className="output">
+          <div className="output window">
             <div className="title-bar">
               <p className="title-bar-text">Get your sweet, sweet, Markdown here:</p>
             </div>
@@ -80,6 +89,7 @@ render() {
             </ScrollSyncPane>
           </div>
         </container>
+        <footer></footer>
       </div>
     </ScrollSync>
   )};
