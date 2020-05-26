@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "30cbbc70af5cad26c9c4920163403fd6",
+    "revision": "47196bf4f09c0ce6fd5e338a59926614",
     "url": "/Markdowner98/index.html"
   },
   {
-    "revision": "63d482174196c02ccccd",
+    "revision": "b06ec6361b819567dcd1",
     "url": "/Markdowner98/static/css/2.cee400f1.chunk.css"
   },
   {
-    "revision": "5a323a01fb40ce08c93a",
-    "url": "/Markdowner98/static/css/main.4f7a69de.chunk.css"
+    "revision": "bd2c223ce02630121ad9",
+    "url": "/Markdowner98/static/css/main.db714e50.chunk.css"
   },
   {
-    "revision": "63d482174196c02ccccd",
-    "url": "/Markdowner98/static/js/2.47b9e1e5.chunk.js"
+    "revision": "b06ec6361b819567dcd1",
+    "url": "/Markdowner98/static/js/2.7d890455.chunk.js"
   },
   {
     "revision": "7a29fd67914f99c562dc3f65bbf1078b",
-    "url": "/Markdowner98/static/js/2.47b9e1e5.chunk.js.LICENSE.txt"
+    "url": "/Markdowner98/static/js/2.7d890455.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "5a323a01fb40ce08c93a",
-    "url": "/Markdowner98/static/js/main.0c63a947.chunk.js"
+    "revision": "bd2c223ce02630121ad9",
+    "url": "/Markdowner98/static/js/main.f974e4b9.chunk.js"
   },
   {
     "revision": "810967e5730eb85bdadd",
