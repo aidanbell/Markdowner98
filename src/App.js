@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import './App.css';
 import '98.css';
 
-var md = require('markdown-it')();
+var newLine = require('markdown-it-preserve-newline');
+var md = require('markdown-it')().use(newLine)
 
 class App extends Component {
   constructor() {
@@ -16,8 +17,10 @@ class App extends Component {
   }
 
   handleChange(e) {
+    let r = md.render(this.state.input)
     this.setState({
-      [e.target.name]: e.target.value
+      [e.target.name]: e.target.value,
+      result: md.render(this.state.input)
     })
   }
 
@@ -34,13 +37,13 @@ render() {
     <div className="App">
       <h1>Welcome To Markdown98</h1>
       <container>
-        <div clasName="input">
+        <div className="input">
           <form name="input" onSubmit={this.handleSubmit}>
             <textarea name="input" id="editor" value={this.state.input} onChange={this.handleChange} autoFocus></textarea>
             <button type="submit"></button>
           </form>
         </div>
-        <div className="output">{this.state.result}</div>
+        <div className="output" dangerouslySetInnerHTML={{__html: this.state.result}}></div>
       </container>
     </div>
   )};
