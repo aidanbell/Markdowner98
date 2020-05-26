@@ -85,7 +85,12 @@ footer {
 }
 
 #more {
-  margin: 1vmin;
+  margin: 0.5vmin;
+  height: 3vmin;
+  /* background-image: url("https://cdn.vox-cdn.com/thumbor/sVV5FY43ITVX6M5r61MBrnnQSdI=/cdn.vox-cdn.com/uploads/chorus_asset/file/6028879/win95s.0.gif");
+  background-size: contain;
+  background-repeat: no-repeat; */
+
 }
 
 .inputText {
@@ -104,5 +109,27 @@ footer {
 }
 
 .menu * {
-  font-size: 1.5em;
+  font-size: 1.4em;
+}
+
+#links {
+  padding: 0;
+  padding-top: 1vmin;
+  margin: 0;
+  list-style: none;
+}
+
+
+#blurb {
+  font-size: 1.2em;
+  margin: auto;
+  width: 40%
+}
+
+#icebox {
+  text-align: left
+}
+
+#more img {
+  width: 10vmin;
 }

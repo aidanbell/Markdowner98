@@ -9,6 +9,7 @@
     "@testing-library/user-event": "^7.2.1",
     "gh-pages": "^2.2.0",
     "highlight.js": "^10.0.3",
+    "html2pdf.js": "^0.9.2",
     "markdown-it": "^11.0.0",
     "markdown-it-preserve-newline": "0.0.1",
     "react": "^16.13.1",
